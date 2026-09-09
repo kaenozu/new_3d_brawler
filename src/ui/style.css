@@ -1,0 +1,88 @@
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #101418;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+#game {
+  display: block;
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+
+#hud {
+  position: absolute;
+  inset: 20px 24px auto 24px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  pointer-events: none;
+  text-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+
+#hud .left,
+#hud .right {
+  min-width: 180px;
+}
+
+#hud .right {
+  text-align: right;
+  line-height: 1.7;
+}
+
+.bar {
+  margin-top: 8px;
+  width: 220px;
+  height: 14px;
+  background: rgba(0,0,0,.45);
+  border: 1px solid rgba(255,255,255,.35);
+}
+
+.bar span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #e85b67;
+  transition: width .12s linear;
+}
+
+#center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: rgba(0,0,0,.45);
+  color: white;
+  pointer-events: none;
+}
+
+#center-title {
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+
+#center-sub {
+  font-size: 15px;
+  opacity: .85;
+}
+
+#status {
+  position: absolute;
+  left: 24px;
+  bottom: 18px;
+  color: rgba(255,255,255,.7);
+  font: 12px ui-monospace, monospace;
+  pointer-events: none;
+}

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New 3D Brawler v0.1</title>
+  </head>
+  <body>
+    <canvas id="game"></canvas>
+    <div id="hud">
+      <div class="left">
+        <strong>PLAYER</strong>
+        <div class="bar"><span id="hp-fill"></span></div>
+      </div>
+      <div class="right">
+        <div>COMBO <strong id="combo">0</strong></div>
+        <div>SCORE <strong id="score">000000</strong></div>
+      </div>
+    </div>
+    <div id="center" style="display:none">
+      <div id="center-title"></div>
+      <div id="center-sub"></div>
+    </div>
+    <div id="status">A/D 移動 / Space ジャンプ / J 攻撃 / K 強攻撃 / L 回避 / Esc ポーズ / R リトライ</div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
